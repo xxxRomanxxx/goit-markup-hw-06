@@ -356,14 +356,6 @@
               <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
             </li>
           </ul>
-          <form>
-            <label>
-              <input type="email" name="email" />
-            </label>
-            <button type="submit">Підписатися
-              
-            </button>
-</form>
         </div>
         <div class="footer-social">
           <p class="footer-social-text">
@@ -400,6 +392,19 @@
                 </li>
               </ul>
         </div>
+        <div class="mailing">
+          <form class="mailing-form">
+            <p class="mailing-text">Підпишіться на розсилку</p>
+            <label class="mailing-label" for="email"> </label>
+            <input class="mailing-input" type="email" name="email" id="email" placeholder="E-mail" />
+            <button type="submit" class="mailing-button">
+              Підписатися
+            <svg class="mailing-icon" width="24" height="24">
+              <use href="./imeges/icons.svg#icon-send"></use>
+            </svg>
+            </button>
+          </form>
+        </div>
         </div>
         </address>
       </div>
@@ -411,6 +416,19 @@
             <use href="./imeges/icons.svg#icon-Vector"></use>
           </svg>
         </button>
+        <form class="modal-form">
+          <h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
+          <label class="modal-name-lable" for="name">Ім'я</label>
+          <input class="modal-name-input" type="text" name="name" id="name">
+          <label class="modal-tel-lable" for="tel">Телефон</label>
+          <input class="modal-tel-input" type="tel" name="tel" id="tel">
+          <label class="modal-email-lable" for="email">Пошта</label>
+          <input class="modal-email-input" type="email" name="email" id="email">
+          <label class="modal-coment-lable" for="coment"></label>
+          <textarea class="modal-coment-textarea" name="coment" id="coment" cols="30" rows="10"></textarea>
+          <label for=""></label>
+          <button class="modal-submit-button" type="submit">Відправити</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>

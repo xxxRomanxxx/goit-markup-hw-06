@@ -787,3 +787,36 @@ transition-timing-function: var(--transition-cubic-bezier) , var(--transition-cu
   cursor: pointer;
 }
 
+.modal-form {
+  padding-left: 41px;
+  padding-top: 40px;
+  padding-right: 39px;
+  padding-bottom: 40px;
+}
+
+.modal-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+}
+
+.modal-box-name {
+  margin-bottom: 10px;
+}
+
+.modal-name-input {
+  width: 100%;
+}
+
+.modal-tel-input {
+  width: 100%;
+}
+
+.modal-email-input{
+  width: 100%;
+}
+
+.modal-coment-textarea {
+  width: 100%;
+}

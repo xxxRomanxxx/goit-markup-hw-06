@@ -327,7 +327,7 @@ img {
   justify-content: center;
 
   text-transform: uppercase;
-  font-weight: 700px;
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   background-color: var(--background-color-work);
@@ -788,35 +788,74 @@ transition-timing-function: var(--transition-cubic-bezier) , var(--transition-cu
 }
 
 .modal-form {
-  padding-left: 41px;
-  padding-top: 40px;
-  padding-right: 39px;
-  padding-bottom: 40px;
+  margin-left: 41px;
+  margin-right: 39px;
+  margin-bottom: 40px;
 }
 
 .modal-title {
+  margin-bottom: 12px;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
   text-align: center;
 }
 
-.modal-box-name {
+.modal-lable {
+  position: relative;
+}
+
+.modal-input {
+  display: block;
   margin-bottom: 10px;
-}
-
-.modal-name-input {
+  padding-left: 42px;
+  height: 40px;
   width: 100%;
 }
 
-.modal-tel-input {
-  width: 100%;
-}
-
-.modal-email-input{
-  width: 100%;
+.modal-svg {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .modal-coment-textarea {
+  display: block;
+  margin-bottom: 20px;
   width: 100%;
+}
+
+.modal-checkbox {
+  display: block;
+  margin-bottom: 30px;
+}
+
+.modal-submit-button {
+  display: flex;
+    padding: 10px 32px;
+    margin: 0 auto;
+    justify-content: center;
+    border-radius: 4px;
+  
+    color: var(--white-text-color);
+    background-color: var(--accent-text-color);
+    border-color: transparent;
+    font-family: Roboto, sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    text-decoration: none;
+    transition-property: color, background-color;
+    transition-duration: 250ms, 250ms;
+    transition-timing-function: var(--transition-cubic-bezier), var(--transition-cubic-bezier);
+  }
+  
+  .modal-submit-button:hover,
+  .modal-submit-button:focus {
+    color: var(--title-text-color);
+    background-color: var(--background-color-secondary);
+    border-color: transparent;
 }

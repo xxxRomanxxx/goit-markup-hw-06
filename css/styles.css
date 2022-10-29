@@ -837,6 +837,7 @@ transition-timing-function: var(--transition-cubic-bezier) , var(--transition-cu
   max-height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  resize: none;
 }
 
 .modal-span {
@@ -877,6 +878,7 @@ transition-timing-function: var(--transition-cubic-bezier) , var(--transition-cu
   left: 15px;
   top: 50%;
   transform: translateY(-50%);
+  fill: var(--white-text-color);
 }
 
 .modal-submit-button {

@@ -548,6 +548,7 @@ img {
 
 .mailing-input {
   margin-right: 12px;
+  padding-left: 16px;
   width: 358px;
   height: 50px;
 
@@ -764,8 +765,9 @@ transition-timing-function: var(--transition-cubic-bezier) , var(--transition-cu
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    min-width: 528px;
-    min-height: 581px;
+    max-width: 528px;
+    max-width: 581px;
+    padding: 40px;
   background-color: var(--background-color-primary);
   overflow: auto;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -773,25 +775,22 @@ transition-timing-function: var(--transition-cubic-bezier) , var(--transition-cu
 }
 
 .modal-close-button {
+  position: absolute;
+  right: 8px;
+  top: 8px;
   display: flex;
-  width: 30px;
-  height: 30px;
-  margin-top: 8px;
-  margin-left: auto;
-  margin-right: 8px;
   align-items: center;
   justify-content: center;
+  flex-direction: row-reverse;
+  width: 30px;
+  height: 30px;
+  
   border-radius: 50%;
   background-color: var(--background-color-primary);
   border: 1px solid var(--border-color-modal-button);
   cursor: pointer;
 }
 
-.modal-form {
-  padding-left: 41px;
-  padding-right: 39px;
-  padding-bottom: 40px;
-}
 
 .modal-title {
   margin-bottom: 12px;
@@ -800,8 +799,12 @@ transition-timing-function: var(--transition-cubic-bezier) , var(--transition-cu
   line-height: 1.15;
   text-align: center;
 }
+.modal-lable {
+  display: block;
+}
 
-.modal-container {
+.modal-span-icon {
+  display: block;
   position: relative;
 }
 
@@ -837,41 +840,45 @@ transition-timing-function: var(--transition-cubic-bezier) , var(--transition-cu
   fill: var(--accent-text-color);
 }
 
+.modal-coment-lable {
+  display: block;
+  margin-bottom: 20px;
+}
+
 .modal-coment-textarea {
   display: block;
   padding: 12px 16px;
-  margin-bottom: 20px;
   width: 100%;
   max-height: 120px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     resize: none;
-    ransition-property: border-color;
-      transition-duration: 250ms;
-      transition-timing-function: var(--transition-cubic-bezier);
+    transition-property: border-color;
+    transition-duration: 250ms;
+    transition-timing-function: var(--transition-cubic-bezier);
 }
 
 .modal-coment-textarea:focus {
   outline: none;
   border-color: var(--accent-text-color);
 }
-.modal-span {
+.modal-span-text {
+  display: block;
+  margin-bottom: 4px;
+
   color: var(--primary-text-color);
   font-weight: 400;
   font-size: 12px;
   line-height: 1.16;
-
-  margin-bottom: 4px;
 }
 
 .modal-checkbox {
-  position: relative;
-  display: block;
+  display: flex;
   margin-bottom: 30px;
+  justify-content: center;
+  align-items: center;
 }
-
 .modal-span-checkbox {
-  padding-left: 36px;
 
   color: var(--primary-text-color);
     font-weight: 400;
@@ -886,14 +893,11 @@ transition-timing-function: var(--transition-cubic-bezier) , var(--transition-cu
 }
 
 .modal-checkbox-svg {
-  position: absolute;
-  left: 15px;
-  top: 50%;
-  transform: translateY(-50%);
+  margin-right: 7px;
+
   fill: var(--accent-text-color);
   border: 2px solid var(--title-text-color);
   border-radius: 2px;
-
   transition-property: background-color, border-color;
     transition-duration: 250ms, 250ms;
     transition-timing-function: var(--transition-cubic-bezier), var(--transition-cubic-bezier);
@@ -907,7 +911,7 @@ transition-timing-function: var(--transition-cubic-bezier) , var(--transition-cu
 
 .modal-submit-button {
   display: flex;
-    padding: 10px 32px;
+    padding: 8px 50px;
     margin: 0 auto;
     justify-content: center;
     border-radius: 4px;

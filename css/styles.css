@@ -781,7 +781,6 @@ transition-timing-function: var(--transition-cubic-bezier) , var(--transition-cu
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: row-reverse;
   width: 30px;
   height: 30px;
   

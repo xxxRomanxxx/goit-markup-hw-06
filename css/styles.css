@@ -765,8 +765,8 @@ transition-timing-function: var(--transition-cubic-bezier) , var(--transition-cu
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    max-width: 528px;
-    max-width: 581px;
+    width: 528px;
+    height: 581px;
     padding: 40px;
   background-color: var(--background-color-primary);
   overflow: auto;
@@ -800,6 +800,7 @@ transition-timing-function: var(--transition-cubic-bezier) , var(--transition-cu
 }
 .modal-lable {
   display: block;
+  margin-bottom: 10px;
 }
 
 .modal-span-icon {
@@ -809,7 +810,6 @@ transition-timing-function: var(--transition-cubic-bezier) , var(--transition-cu
 
 .modal-input {
   display: block;
-  margin-bottom: 10px;
   padding-left: 42px;
   height: 40px;
   width: 100%;
